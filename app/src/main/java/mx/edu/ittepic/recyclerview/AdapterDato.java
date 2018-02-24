@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class AdapterDato extends RecyclerView.Adapter<AdapterDato.ViewHolderDatos> {
 
     ArrayList<String>listDatos;
+    //public String[] vector = {"iris","adanelli","lopez","garcia","carlos","cesar","jose","jorge","caseres","iris"};
 
     public AdapterDato(ArrayList<String> listDatos) {
         this.listDatos = listDatos;
@@ -43,11 +44,22 @@ public class AdapterDato extends RecyclerView.Adapter<AdapterDato.ViewHolderDato
         public ViewHolderDatos(View itemView) {
             super(itemView);
             dato=itemView.findViewById(R.id.idDato);
+            /*dato2=itemView.findViewById(R.id.idDato2);
+            dato3=itemView.findViewById(R.id.idDato3);*/
 
         }
 
         public void asignarDatos(String sdata) {
-            dato.setText(sdata);
+            dato.setText(""+sdata);
+
         }
     }
 }
+
+
+
+
+/*
+*dato2.setText(sdata + "No. Control");
+            dato3.setText(sdata + "Carrera");
+*/
